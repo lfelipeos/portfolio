@@ -45,7 +45,7 @@ const About = () => {
                             variant="h2" 
                             sx={{ color: "primary.main", mb: 3, fontWeight: "bold" }}
                         >
-                            About Me
+                            Sobre Mim
                         </Typography>
                         
                         <Typography 

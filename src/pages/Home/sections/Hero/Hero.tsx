@@ -62,12 +62,18 @@ const Hero = () =>{
                     <Grid container spacing={3} sx={{ display: 'flex', justifyContent: 'center' }} pt={3}>
                         <Grid size={{ xs: 12, md: 6 }} sx={{ display: 'flex', justifyContent: 'center' }}>                        
                             <StyledButton onClick={handleDownloadCV}>
-                                <DownloadIcon/><Typography>Download CV</Typography>
+                                <DownloadIcon/>
+                                <Typography>
+                                    Download CV
+                                </Typography>
                             </StyledButton>
                         </Grid>
                         <Grid size={{ xs: 12, md: 6 }} sx={{ display: 'flex', justifyContent: 'center' }}>
                             <StyledButton onClick={handleContactClick}>
-                                <EmailIcon /><Typography>Contato</Typography>
+                                <EmailIcon />
+                                <Typography>
+                                    Contato
+                                </Typography>
                             </StyledButton>
                         </Grid>
                     </Grid>
