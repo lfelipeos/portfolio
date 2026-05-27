@@ -4,6 +4,7 @@ import DownloadIcon from '@mui/icons-material/Download'
 import EmailIcon from '@mui/icons-material/Email'
 import StyledButton from "../../../../components/StyledButton/StyledButton"
 import { AnimatedBackground } from "../../../../components/AnimatedBackgroung/AnimatedBackgroung"
+import CV from "../../../../assets/pdf/LUIZ FELIPE OLIVEIRA DOS SANTOS-CV.pdf"
 
 const Hero = () =>{
 
@@ -20,10 +21,23 @@ const Hero = () =>{
         border: `1px solid ${theme.palette.primary.contrastText}`,
         
     }))
-  
-return (
-    <>
-      <StyledHero>
+
+    const handleDownloadCV = () => {
+        const link = document.createElement('a');
+        link.href = CV;
+        link.download = 'LUIZ FELIPE OLIVEIRA DOS SANTOS-CV.pdf';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
+
+    const handleContactClick = () => {
+        window.location.href = "mailto:lfelipeos.1991@gmail.com?subject=Contato%20via%20portfólio&body=Olá%20Luiz%2C%0A%0AEstou%20entrando%20em%20contato%20com%20você%20através%20do%20seu%20site.%0A%0AAtenciosamente%2C";
+    }
+
+    return (
+        <>
+          <StyledHero>
 
         <Container>
             <Grid container spacing={2}>
@@ -47,13 +61,13 @@ return (
                     </Typography>
                     <Grid container spacing={3} sx={{ display: 'flex', justifyContent: 'center' }} pt={3}>
                         <Grid size={{ xs: 12, md: 6 }} sx={{ display: 'flex', justifyContent: 'center' }}>                        
-                            <StyledButton>
+                            <StyledButton onClick={handleDownloadCV}>
                                 <DownloadIcon/><Typography>Download CV</Typography>
                             </StyledButton>
                         </Grid>
                         <Grid size={{ xs: 12, md: 6 }} sx={{ display: 'flex', justifyContent: 'center' }}>
-                            <StyledButton>
-                                <EmailIcon /><Typography>Contact Me</Typography>
+                            <StyledButton onClick={handleContactClick}>
+                                <EmailIcon /><Typography>Contato</Typography>
                             </StyledButton>
                         </Grid>
                     </Grid>
