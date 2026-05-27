@@ -49,11 +49,13 @@ O projeto foi construído como uma aplicação de página única (Single Page Ap
 1. Clone o repositório:
    ```bash
    git clone [https://https://github.com/lfelipeos/portfolio.git](https://https://github.com/lfelipeos/portfolio.git)
-Instale as dependências de pacotes:
+   
+2. Instale as dependências de pacotes:
 
-Bash
-npm install
-Execute o servidor de desenvolvimento local:
+   ```bash
+   npm install
 
-Bash
-npm run dev
+3. Execute o servidor de desenvolvimento local:
+
+   ```bash
+   npm run dev
