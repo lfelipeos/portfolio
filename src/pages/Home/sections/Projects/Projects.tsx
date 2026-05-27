@@ -27,7 +27,7 @@ const Projects = () => {
             title: "Análise de Emendas Parlamentares",
             description: "Estudo analítico e manipulação de dados sobre a distribuição e aplicação de emendas parlamentares. Desenvolvido com foco em extração, tratamento de dados e geração de relatórios estratégicos.",
             githubUrl: "https://github.com/lfelipeos/analise-emendas-parlamentares",
-            pptUrl: "https://docs.google.com/presentation/d/seu-slide" 
+            pptUrl: "https://docs.google.com/presentation/d/15mJuXLNn41PRRdUiUHhU5TNKqt0O99W_EN4lC0ZegqE/edit?usp=sharing" 
         }
     ]
 
@@ -48,7 +48,7 @@ const Projects = () => {
                     align="center" 
                     sx={{ color: "secondary.main", mb: 8, fontSize: "1.2rem" }}
                 >
-                    Aplicações e documentações das soluções desenvolvidas.
+                    Projetos desenvolvidos durante minha jornada de aprendizado, focados em análise de dados e desenvolvimento web.
                 </Typography>
 
                 <Grid container spacing={4} justifyContent="center">
@@ -68,12 +68,12 @@ const Projects = () => {
                                     
                                     <StyledButton onClick={() => window.open(project.githubUrl, "_blank")}>
                                         <CodeIcon sx={{ mr: 1 }} />
-                                        <Typography variant="button" sx={{ textTransform: "none" }}>Acessar Código</Typography>
+                                        <Typography variant="button" sx={{ textTransform: "none" }}>GitHub</Typography>
                                     </StyledButton>
 
                                     <StyledButton onClick={() => window.open(project.pptUrl, "_blank")}>
                                         <DescriptionIcon sx={{ mr: 1 }} />
-                                        <Typography variant="button" sx={{ textTransform: "none" }}>Ver Apresentação PPT</Typography>
+                                        <Typography variant="button" sx={{ textTransform: "none" }}>Apresentação</Typography>
                                     </StyledButton>
 
                                 </CardActions>
