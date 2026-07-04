@@ -24,7 +24,9 @@ const Hero = () =>{
 
     const handleDownloadCV = () => {
         const link = document.createElement('a');
-        link.href = CV;
+        const cacheBuster = new Date().getTime(); 
+        link.href = `${CV}?v=${cacheBuster}`; 
+
         link.download = 'LUIZ FELIPE OLIVEIRA DOS SANTOS-CV.pdf';
         document.body.appendChild(link);
         link.click();
