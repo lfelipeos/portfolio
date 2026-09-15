@@ -45,6 +45,12 @@ const Projects = () => {
             description: "Um software em Python com interface gráfica (GUI) projetado para resolver problema dos meus arquivos da faculdade baixados com nomes aleatórios.",
             githubUrl: "https://github.com/lfelipeos/organizador-pdf",            
         }
+        {
+            id: 4,
+            title: "Cadastro de Responsável",
+            description: "Estudo de desenvolvimento android com foco no aprendizado DTO - Data Transfer Object implementando o método onCreate inicializando os componentes de tela.",
+            githubUrl: "https://github.com/lfelipeos/PAS-ProgramacaoDispositivosMoveis",            
+        }
     ]
 
     const currentProject = myProjects[activeIndex]
