@@ -44,7 +44,7 @@ const Projects = () => {
             title: "Organizador de PDF",
             description: "Um software em Python com interface gráfica (GUI) projetado para resolver problema dos meus arquivos da faculdade baixados com nomes aleatórios.",
             githubUrl: "https://github.com/lfelipeos/organizador-pdf",            
-        }
+        },  
         {
             id: 4,
             title: "Cadastro de Responsável",
